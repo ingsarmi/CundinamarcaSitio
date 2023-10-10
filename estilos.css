@@ -1,0 +1,564 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Color de fondo de la página */
+}
+
+.container {
+    max-width: 1080px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Agrega espacio alrededor del contenido */
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 20px; /* Agrega espacio entre las secciones */
+}
+
+/* Estilos específicos para cada sección, como se mencionaron anteriormente */
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+/* Estilos para la Sección 2 */
+.seccion2 {
+    display: flex;
+    background-color: #4D4D4D;
+    color: #FFF;
+    margin-bottom: 20px;
+    max-height: 417px; /* Altura máxima de la sección */
+    overflow: hidden; /* Oculta el contenido adicional si excede la altura máxima */
+}
+
+.columna1 {
+    flex: 1;
+    padding: 0 px;
+    display: flex;
+    justify-content: flex-start; /* Alinea la imagen a la izquierda */
+    align-items: flex-start; /* Alinea la imagen en la parte superior */
+    overflow: hidden; /* Oculta cualquier contenido que desborde de la columna */
+}
+
+.columna1 img {
+    max-height: 100%; /* La imagen se ajusta al 100% de la altura de la columna */
+    width: auto;
+    max-width: 100%; /* Ancho máximo relativo al 100% del ancho de la columna */
+}
+
+.columna2 {
+    flex: 1;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.rectangulo {
+    width: 13.853px;
+    height: 114.085px;
+    background-color: #FBE122;
+    margin-right: 10px; /* Espacio entre el rectángulo y el contenido de texto */
+    margin-left: 10px; /* Espacio entre el rectángulo y la imagen */
+}
+
+.contenido-columna2 h1,
+.contenido-columna2 h2,
+.contenido-columna2 p {
+    font-family: "Century Gothic", sans-serif; 
+    font-size: 58.08px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.9;
+    margin: 0px;
+}
+
+.contenido-columna2 h1 {
+    color: #FFF;
+}
+
+.contenido-columna2 h2 {
+    color: #00A99D;
+}
+
+.contenido-columna2 p {
+    color: #FFF;
+    font-size: 16.298px;
+}
+
+
+/* Sección 3 */
+#botones {
+    display: flex;
+    align-items: center; /* Centra horizontalmente los elementos */
+    justify-content: space-around; /* Centra verticalmente los elementos */
+    margin-top: -80px;
+    position: absolute; /* Establecer posición absoluta para los botones */
+    z-index: 2;
+}
+
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Estilos para los botones en la Sección 3 */
+.boton-seccion3 {
+    margin: 15px;
+    width: 145px;
+    height: 145px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background-color: #F4F4F4; /* Fondo del botón */
+    border: 2px solid #F4F4F4; /* Borde del botón */
+    margin-right: 20px; /* Espacio entre los botones */
+    color: #4D4D4D; /* Color de texto */
+    font-family: "Inter", sans-serif; /* Fuente del texto */
+    font-size: 15.224px; /* Tamaño de fuente */
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para cambiar el color del texto cuando se pasa el cursor sobre el botón */
+.boton-seccion3:hover {
+    background-color: #00A99D; /* Cambia el fondo al pasar el cursor */
+    border-color: #00A99D; /* Mantén el borde con el mismo color */
+    color: #fff; /* Color de texto al pasar el cursor */
+}
+
+/* Estilo para la imagen en su estado normal */
+.boton-seccion3 img {
+    max-width: 44.224px;
+    max-height: 44.18px;
+    width: auto; /* Ajusta el ancho automáticamente para mantener la proporción */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    filter: grayscale(100%); /* Convierte la imagen a escala de grises */
+    transition: filter 0.3s ease-in-out; /* Agrega una transición suave */
+}
+
+.boton-seccion3:hover .filtro{
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(301deg) brightness(102%) contrast(101%);
+
+}
+.boton-seccion3 .filtro{
+    filter: invert(29%) sepia(1%) saturate(1600%) hue-rotate(322deg) brightness(104%) contrast(97%);
+}
+
+.boton-seccion3.activo {
+    background-color: #00A99D; /* Cambia el fondo al pasar el cursor */
+    border-color: #00A99D; /* Mantén el borde con el mismo color */
+    color: #fff; /* Color de texto al pasar el cursor */
+}
+.boton-seccion3.activo img{
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(301deg) brightness(102%) contrast(101%);
+}
+
+
+/* Estilo para el contenedor de información */
+
+#informacion {
+    background-color: rgba(255, 255, 255, 0.95); /* Color de fondo con transparencia */
+    height: 500px;
+    filter: drop-shadow(6.150000095367432px 2.049999952316284px 10.25px rgba(1, 0, 1, 0.35));
+    padding: 20px; /* Espaciado interior para separar el contenido del borde */
+    margin-top: -19px; /* Mover hacia arriba con un margen negativo */
+    position: relative; /* Establecer posición relativa */
+    z-index: 1; /* Asegurar que la información esté sobre los botones */
+}
+
+
+/* Estilo para la sección  1 Informacion*/
+
+
+/* Estilo para la columna de texto */
+.seccion-contenido1{
+    display: flex;
+    align-items: center; /* Centrar verticalmente el contenido */
+    margin-top: 100px;
+}
+
+
+.columna-rectangulo {
+    width: 8px; /* Ancho del rectángulo */
+    height: 74px; /* Altura del rectángulo */
+    background-color: #00A99D; /* Color de fondo del rectángulo */
+    margin: 20px 20px; /* Margen derecho para separar del texto */
+}
+
+/* Estilo para el título */
+.columna-texto h2 {
+    
+    stroke-width: 2px;
+    color: #00A99D;
+    font-size: 15.878px;
+}
+/* Estilo para el párrafo */
+.columna-texto p {
+    
+    color: #4D4D4D;
+    font-family: Inter;
+    font-size: 15.878px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Estilo para la Sección 2 Informacion*/
+
+.seccion-contenido2{
+    display: flex;
+    justify-content:center;
+    align-items: center; /* Centrar verticalmente el contenido */
+    margin-top: 80px;
+}
+
+#seccion2-info p {
+    text-align: center;
+    font-size: 14px; /* Tamaño de fuente para el párrafo */
+    color: #4D4D4D; /* Color de texto para el párrafo */
+    font-weight: 400;
+    
+    padding: 40px 40px;
+}
+
+/* Estilo para la Sección 3 Informacion*/
+
+
+/* Estilo para las tres columnas */
+#seccion3-info{
+    display: flex;
+    align-items: center; /* Centrar verticalmente el contenido */
+    justify-content: space-between; /* Espacio entre las columnas */
+    padding: 120px;
+}
+
+.seccion3-info p{
+
+    margin-left: 0px;
+    font-size: 14px; /* Tamaño de fuente para el párrafo */
+    color: #4D4D4D; /* Color de texto para el párrafo */
+    font-weight: 400;
+}
+.seccion3-info h2{
+    stroke-width: 2px;
+    color: #00A99D;
+    font-size: 15.878px;
+}
+.seccion-contenido3{
+    display: flex;
+
+}
+
+
+/* Estilo individual para cada columna */
+.columna-seccion3 {
+    display: flex; /* Usar flexbox para alinear las columnas horizontalmente */
+    justify-content: space-between; /* Espacio entre las columnas */
+    margin-top: 0px; /* Margen superior para separar el párrafo de las columnas */
+    flex-direction: row; /* Cambiar la dirección a horizontal */
+    align-items: flex-start; /* Alinea la imagen en la parte superior */
+    
+}
+
+/* Estilo para el contenido dentro de las columnas */
+.columna-seccion3 h3 {
+    font-size: 24px; /* Tamaño de fuente para el título de la columna */
+    color: #333; /* Color de texto para el título de la columna */
+}
+
+.columna-seccion3 p {
+    margin-top: 0px;
+    margin-right: 10px;
+    font-size: 14px; /* Tamaño de fuente para el texto dentro de la columna */
+    color: #666; /* Color de texto para el texto dentro de la columna */
+    margin-left: 20px;
+}
+
+.columna-seccion3 img {
+    display: flex;
+    align-items: flex-start; /* Alinea la imagen en la parte superior */
+}
+
+/* Estilo para la Sección 4 Informacion*/
+
+
+/* Estilo para las tres columnas */
+#seccion4-info{
+    display: flex;
+    align-items: center; /* Centrar verticalmente el contenido */
+    justify-content: space-between; /* Espacio entre las columnas */
+    margin-top: 100px; /* Margen superior para separar el párrafo de las columnas */
+    padding: 120px;
+}
+
+.seccion4-info p{
+
+    margin-left: 0px;
+    font-size: 14px; /* Tamaño de fuente para el párrafo */
+    color: #4D4D4D; /* Color de texto para el párrafo */
+    font-weight: 500;
+}
+.seccion4-info h2{
+    stroke-width: 2px;
+    color: #00A99D;
+    font-size: 15.878px;
+}
+.seccion-contenido4{
+    display: flex;
+}
+
+
+/* Estilo individual para cada columna */
+.columna-seccion4 {
+    display: flex; /* Usar flexbox para alinear las columnas horizontalmente */
+    justify-content: space-between; /* Espacio entre las columnas */
+    margin-top: 0px; /* Margen superior para separar el párrafo de las columnas */
+    flex-direction: row; /* Cambiar la dirección a horizontal */
+    align-items: flex-start; /* Alinea la imagen en la parte superior */
+    
+}
+
+/* Estilo para el contenido dentro de las columnas */
+.columna-seccion4 h3 {
+    font-size: 24px; /* Tamaño de fuente para el título de la columna */
+    color: #333; /* Color de texto para el título de la columna */
+}
+
+.columna-seccion4 p {
+    margin-top: 0px;
+    margin-right: 50px;
+    font-size: 14px; /* Tamaño de fuente para el texto dentro de la columna */
+    color: #666; /* Color de texto para el texto dentro de la columna */
+    margin-left: 20px;
+}
+
+.columna-seccion4 img {
+    display: flex;
+    align-items: flex-start; /* Alinea la imagen en la parte superior */
+}
+
+/* Estilo para la Sección 5 Informacion*/
+
+
+/* Estilo para las tres columnas */
+#seccion5-info{
+    display: flex;
+    align-items: center; /* Centrar verticalmente el contenido */
+    justify-content: space-between; /* Espacio entre las columnas */
+    margin-top: 100px; /* Margen superior para separar el párrafo de las columnas */
+    padding: 120px;
+}
+
+/* Estilo para la Sección 6 Informacion*/
+
+
+/* Estilo para una columna*/
+#seccion6-info{
+    display: flex;
+    align-items:center; /* Centrar verticalmente el contenido */
+    justify-content: center; /* Espacio entre las columnas */
+    margin-top: 100px; /* Margen superior para separar el párrafo de las columnas */
+    padding: 120px;
+    margin-left: 120px;
+}
+
+.seccion-contenido6{
+    display: flex;
+    align-items:center; /* Centrar verticalmente el contenido */
+    justify-content: center; /* Espacio entre las columnas */
+    width: 500px;
+}
+
+/* Estilo para la columna de la imagen */
+.columna-imagen6 {
+    flex: 1;
+    text-align: center;
+}
+
+/* Estilo para la imagen dentro de la columna de imagen */
+.columna-imagen6 img {
+    max-width: 200px; /* Tamaño máximo de la imagen */
+    width: 100px;
+    height: auto; /* Mantiene la proporción de aspecto */
+}
+
+/* Estilo para la columna de texto al lado derecho */
+.columna-texto6 {
+    flex: 2;
+}
+
+/* Estilo para el título */
+.columna-texto6 h3 {
+    font-size: 30px;
+    font-weight: 100;
+    margin: 0; /* Elimina el margen por defecto del título */
+    color: #4D4D4D;
+}
+
+/* Estilo para el subtitulo */
+.columna-texto6 h2 {
+    font-size: 35px;
+    margin: 0; /* Elimina el margen por defecto del título */    
+    color: #4D4D4D;
+}
+
+
+
+/* Sección 4 */
+/* Banner */
+
+.bannerGeneral {
+    display: flex; /* Utilizamos flexbox para alinear horizontalmente los elementos */
+    align-items: center; /* Centramos verticalmente los elementos */
+    justify-content: center;
+    margin: 10px 10px;
+}
+.bannerGeneral  img {
+    width: 50px;
+}
+
+.bannerGeneral h2{
+    color: #606060;
+    font-family: Inter;
+    font-size: 37.345px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.linea-vertical-amarilla {
+    width: 2px;
+    background-color: #D9A900;
+    height: 50px;
+    margin: 0 20px;
+}
+
+.tablaB {
+
+    display: flex;
+    flex-direction: column; /* Alinea los elementos como columnas */
+    align-items: center; /* Centra horizontalmente los elementos */
+    margin: 10px 10px;
+}
+.tablaB > * {
+    margin-bottom: 20px; /* Espacio entre elementos internos (filas) */
+}
+
+.boton-gris {
+    background-color: #606060;
+    color: white;
+    padding: 10px 0; /* Eliminamos el padding horizontal */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente el contenido */
+
+    font-family: Inter;
+    font-size: 18.718px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%; /* Fondo ocupa todo el ancho del contenedor */
+}
+
+.boton-gris img {
+    margin-right: 10px;
+}
+
+
+/* Sección 5 */
+
+.columnas {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.columna h2{
+    color: #4D4D4D;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 20px;
+}
+
+.columna p{
+    color: #4D4D4D;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.columna {
+    flex: 1;
+    padding: 5px;
+    text-align: center;
+}
+
+
+.columna img {
+    
+    width: 164px;
+    height: auto;
+}
+
+.lineaverde {
+
+    text-align: center;
+    width: 5px; /* Ancho reducido */
+    background-color: #00A99D;
+    height: 438px;
+    margin: 0 auto; /* Margen automático horizontal para centrar */
+
+}
+
+.FooterMedit{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.FooterMedit img{
+    width: 100px;
+    margin-right: 20px;
+}
+
+.FooterMedit2{
+    display: flex;
+    flex-direction: column;
+}
+.FooterMedit2 p {
+    color: #4D4D4D;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px; /* Ajusta el margen inferior para reducir el espacio entre el párrafo y el título */
+}
+
+.FooterMedit2 h2 {
+    color: #00A99D;
+    font-family: Inter;
+    font-size: 25.982px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0; /* Elimina el margen superior predeterminado del título */
+}
