@@ -514,8 +514,9 @@ button {
         margin-top: 20px; /* Añadir espacio en la parte superior */
         flex-direction: column;
     }
-    .rectangulo {
+    .rectangulo, .columna-rectangulo{
         display: none;
+        height: 5px; /* Altura reducida */
     }
 
     /* Estilos para la sección 2 de información */
@@ -705,6 +706,29 @@ button {
     height: 438px;
     margin: 0 auto; /* Margen automático horizontal para centrar */
 
+}
+
+/* Estilos para pantallas más pequeñas (dispositivos móviles) */
+@media (max-width: 768px) {
+    .columnas {
+        flex-direction: column; /* Cambiar a una disposición de columna */
+    }
+
+    .columna {
+        flex: 1;
+        padding: 10px; /* Aumentar el espaciado entre las columnas */
+        text-align: center;
+    }
+
+    .lineaverde {
+        height: 5px; /* Altura reducida */
+    }
+    
+    .columna img {
+        width: 100%; /* Ajustar la imagen al 100% del ancho de su contenedor */
+        max-width: 300px; /* Ancho máximo para que la imagen no sea demasiado grande */
+        height: auto; /* Mantener la proporción de aspecto */
+    }
 }
 
 .FooterMedit{
