@@ -93,6 +93,43 @@ img {
     font-size: 16.298px;
 }
 
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .seccion2 {
+        flex-direction: column; /* Cambiar a una disposición de columna en dispositivos móviles */
+        max-height: none; /* Eliminar la altura máxima en dispositivos móviles */
+    }
+
+    .columna1, .columna2 {
+        flex: auto; /* Hacer que ambas columnas se expandan automáticamente */
+        padding: 10px; /* Agregar espacio alrededor de las columnas en dispositivos móviles */
+        align-items: center; /* Centrar el contenido en ambas columnas */
+        text-align: center; /* Centrar el texto en ambas columnas */
+    }
+
+    .columna1 img {
+        max-height: none; /* Eliminar la altura máxima de la imagen en dispositivos móviles */
+        max-width: 100%; /* Asegurarse de que la imagen se ajuste al ancho de la columna */
+    }
+
+    .rectangulo {
+        margin-right: 0; /* Eliminar el margen derecho en dispositivos móviles */
+        margin-left: 0; /* Eliminar el margen izquierdo en dispositivos móviles */
+        margin-top: 10px; /* Agregar espacio entre el rectángulo y el contenido de texto en dispositivos móviles */
+    }
+
+    .contenido-columna2 h1,
+    .contenido-columna2 h2,
+    .contenido-columna2 p {
+        font-size: 38.08px;
+        font-weight: 500;
+    }
+
+    .contenido-columna2 p {
+        color: #FFF;
+        font-size: 10.298px;
+    }
+}
 
 /* Sección 3 */
 #botones {
@@ -143,7 +180,7 @@ button {
 /* Estilo para la imagen en su estado normal */
 .boton-seccion3 img {
     max-width: 44.224px;
-    max-height: 44.18px;
+    max-height: 44.8px;
     width: auto; /* Ajusta el ancho automáticamente para mantener la proporción */
     height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
     filter: grayscale(100%); /* Convierte la imagen a escala de grises */
@@ -239,6 +276,7 @@ button {
 
 
 /* Estilo para las tres columnas */
+
 #seccion3-info{
     display: flex;
     align-items: center; /* Centrar verticalmente el contenido */
@@ -260,7 +298,6 @@ button {
 }
 .seccion-contenido3{
     display: flex;
-
 }
 
 
@@ -416,6 +453,149 @@ button {
     color: #4D4D4D;
 }
 
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Estilos para el contenedor de botones */
+    #botones {
+        flex-direction: column; /* Cambiar a una disposición de columna en dispositivos móviles */
+        align-items: center; /* Centrar horizontalmente los elementos en dispositivos móviles */
+        justify-content: center; /* Centrar verticalmente los elementos en dispositivos móviles */
+        margin-top: 0; /* Eliminar el margen superior */
+        position: static; /* Eliminar la posición absoluta */
+        z-index: auto; /* Restaurar el índice Z al valor predeterminado */
+    }
+
+    button {
+        margin: 10px 0; /* Agregar espacio vertical entre los botones en dispositivos móviles */
+    }
+
+    /* Estilos para los botones */
+    .boton-seccion3 {
+        width: 100%; /* Ancho completo en dispositivos móviles */
+        height: auto; /* Altura automática en dispositivos móviles */
+        margin: 10px 0; /* Agregar espacio vertical entre los botones en dispositivos móviles */
+        margin-right: 0; /* Eliminar el margen derecho en dispositivos móviles */
+        color: #4D4D4D; /* Color de texto */
+        font-size: 14px; /* Tamaño de fuente en dispositivos móviles */
+    }
+
+    .boton-seccion3:hover {
+        background-color: #00A99D; /* Cambia el fondo al pasar el cursor */
+        border-color: #00A99D; /* Mantén el borde con el mismo color */
+        color: #fff; /* Color de texto al pasar el cursor */
+    }
+
+    .boton-seccion3 img {
+        max-width: 60px; /* Tamaño máximo de la imagen */
+        max-height: 60px; /* Tamaño máximo de la imagen */
+        filter: grayscale(0%); /* Eliminar la escala de grises en dispositivos móviles */
+    }
+
+    .boton-seccion3.activo {
+        background-color: #00A99D; /* Cambia el fondo al pasar el cursor */
+        border-color: #00A99D; /* Mantén el borde con el mismo color */
+        color: #fff; /* Color de texto al pasar el cursor */
+    }
+
+    .boton-seccion3.activo img {
+        filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%); /* Restaurar el filtro */
+    }
+
+    /* Estilos para el contenedor de información */
+    #informacion {
+        margin-top: 20px; /* Añadir espacio en la parte superior */
+        padding: 20px; /* Reducir el espacio interior para el contenido */
+        height: auto; /* Altura automática en dispositivos móviles */
+        filter: none; /* Eliminar la sombra en dispositivos móviles */
+    }
+
+    /* Estilos para la sección 1 de información */
+    .seccion-contenido1 {
+        margin-top: 20px; /* Añadir espacio en la parte superior */
+        flex-direction: column;
+    }
+    .rectangulo {
+        display: none;
+    }
+
+    /* Estilos para la sección 2 de información */
+    .seccion-contenido2 {
+        margin-top: 20px; /* Añadir espacio en la parte superior */
+    }
+
+    #seccion2-info p {
+        padding: 20px; /* Añadir espacio interior para el párrafo */
+    }
+
+    /* Estilos para la sección 3 de información */
+    .seccion-contenido3{
+        display: flex;
+        flex-direction: column;
+        padding: 20px; /* Reducir el espacio interior para el contenido */
+    }
+    #seccion3-info {
+        flex-direction: column; /* Cambiar a una disposición de columna en dispositivos móviles */
+        padding: 20px; /* Reducir el espacio interior para el contenido */
+    }
+
+    .seccion3-info h2 {
+        font-size: 24px; /* Tamaño de fuente para el título */
+        margin-bottom: 10px; /* Añadir espacio entre el título y el párrafo */
+    }
+
+    .seccion3-info p {
+        margin-left: 0; /* Eliminar el margen izquierdo */
+        padding-left: 10px;
+    }
+
+    /* Estilos para la sección 4 de información */
+    .seccion-contenido4{
+        display: flex;
+        flex-direction: column;
+        padding: 20px; /* Reducir el espacio interior para el contenido */
+    }
+    #seccion4-info {
+        flex-direction: column; /* Cambiar a una disposición de columna en dispositivos móviles */
+        margin-top: 20px; /* Añadir espacio en la parte superior */
+        padding: 20px; /* Reducir el espacio interior para el contenido */
+    }
+
+    .seccion4-info h2 {
+        font-size: 24px; /* Tamaño de fuente para el título */
+        margin-bottom: 10px; /* Añadir espacio entre el título y el párrafo */
+    }
+    .columna-seccion4 {
+        display: flex; /* Usar flexbox para alinear las columnas horizontalmente */
+        justify-content: center; /* Espacio entre las columnas */
+        align-items: center; /* Alinea la imagen en la parte superior */
+        
+    }
+    
+
+    /* Estilos para la sección 5 de información */
+    #seccion5-info {
+        flex-direction: column; /* Cambiar a una disposición de columna en dispositivos móviles */
+        margin-top: 20px; /* Añadir espacio en la parte superior */
+        padding: 20px; /* Reducir el espacio interior para el contenido */
+    }
+
+    /* Estilos para la sección 6 de información */
+    #seccion6-info {
+        flex-direction: column; /* Cambiar a una disposición de columna en dispositivos móviles */
+        margin-top: 20px; /* Añadir espacio en la parte superior */
+        padding: 20px; /* Reducir el espacio interior para el contenido */
+        margin-left: 0; /* Eliminar el margen izquierdo */
+    }
+
+    .seccion-contenido6 {
+        width: auto; /* Ancho automático en dispositivos móviles */
+    }
+
+    .columna-imagen6 img {
+        max-width: 100%; /* Tamaño máximo de la imagen */
+        height: auto; /* Mantiene la proporción de aspecto */
+    }
+}
 
 
 /* Sección 4 */
